@@ -93,6 +93,8 @@ public class ParameterController {
 	public String paramTest2(/* RequestParam은 여기에 보통 작성 */) {
 		log.info("문제없이 insert 가능한지 확인하기");
 		
+		
+		
 		return "redirect:/param/main";
 	}
 	
