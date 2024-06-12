@@ -8,6 +8,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @ToString
+@AllArgsConstructor
 public class BlogDTO {
 	private String commentName;
 	private String commentOpinion;
