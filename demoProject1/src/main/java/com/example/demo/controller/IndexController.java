@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j // 각 메서드 이동할 때마다 log.info 사용해서 위치 이동 찍기
 public class IndexController {
 
-	@GetMapping("cafe/cafe-index") // 주소창에서 back과 front가 만나는 주소(만남의 장소 위치)
+	@GetMapping("cafe/cafe_index") // 주소창에서 back과 front가 만나는 주소(만남의 장소 위치)
 	public String cafeMainMethod() {
 		log.info("cafe index 메인으로 이동");
 		return "cafe/cafe_index"; // html 파일 위치
@@ -31,7 +31,7 @@ public class IndexController {
 	}
 	
 	// cafe_board로 이동하는 getMapping 만들기
-	@GetMapping("cafe/cafe-board")
+	@GetMapping("cafe/cafe_board")
 	public String cafeBoardMethod() {
 		log.info("cafe board 게시판으로 이동");
 		return "cafe/cafe_board";
