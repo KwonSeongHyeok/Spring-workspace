@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.khmall.mapper.DrinksMapper">
+	<insert id="insertDrink" parameterType="com.khmall.dto.Drinks">
+	INSERT INTO drinks (drinks_id, drinks_name, drinks_price, drinks_quantity)
+	VALUES (goods_seq.NEXTVAL, #{drinks_name}, #{drinks_price}, #{drinks_quantity})	
+	</insert>
+	
+	<select id="getAllDrink" resultType="com.khmall.dto.Drinks">
+		SELECT * FROM drinks
+	</select>
+</mapper>
